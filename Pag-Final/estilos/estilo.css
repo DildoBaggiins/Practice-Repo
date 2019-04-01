@@ -1,0 +1,876 @@
+*{
+  margin: 0;
+  padding:0;
+  border:0;
+}
+body{
+  background: #edd7b6;
+}
+
+p{
+  color:#524c56;
+  font-size:160%;
+  line-height: 155%;
+  padding: 3%;
+  text-indent:5%;
+  text-align:justify;
+}
+
+h3{
+  font-size:175%;
+  line-height: 155%;
+  font-weight: 500;
+  color: #524c56;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a{
+  color:#524c56;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover{
+  color:#A5B083;
+}
+
+img{
+  display: block;
+  margin:0 auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+/* SLIDER */
+
+#c-slider{
+  /* box-sizing: border-box;
+  display: flex; */
+  margin:auto;
+  width: 80%;
+  /* max-width: 900px; */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 10px #A5B083,
+              0 15px 50px;
+}
+
+#slider{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 400%; /* Depende de la cantidad de imágenes en el slider */
+}
+
+#slider section{
+  width: 100%;
+}
+
+#slider img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#btn-prev, #btn-next{
+  width: 40px;
+  height: 40px;
+  background: rgba(237,215,182,0.7);
+  color:#594845;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+#btn-prev:hover, #btn-next:hover{
+  rgba(237,215,182,1);
+}
+
+#btn-prev{
+  left:10px;
+}
+
+#btn-next{
+  right: 10px;
+}
+
+/*=================================*/
+
+/*CONTENEDOR*/
+
+#contenedor{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#banner{
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 0 0 3% 0;
+}
+
+header{
+  width: 100%;
+  height:100px;
+  top:0;
+  left: 0;
+}
+
+header #logo img{
+  margin:20px;
+  float:left;
+}
+
+header #logo h1{
+  margin:30px;
+  /*font-family: "NombreFont";*/
+  font-family: Fantasy;
+  font-size: 325%;
+  float:left;
+  color:#594845;
+}
+
+/*NAVEGADOR*/
+
+nav{
+  float:right;
+  padding: 25px 20px 0 0;
+}
+
+#menu-icono{
+  display: none;
+  font-size:50px;
+}
+
+ul{
+  list-style: none;
+}
+
+nav ul li{
+  font-size:120%;
+  display: inline-block;
+  float:left;
+  padding:15px;
+}
+
+nav ul li a{
+  color: #594845;
+  font-family: Fantasy;
+}
+
+.current{
+  color:#3f5767;
+}
+
+.info{
+  width: 31.5%;
+  float:left;
+  padding:10px;
+  text-align: center;
+}
+
+.icono{
+  margin:0 auto;
+  width:120px;
+  height: 120px;
+  background-color: #A5B083;
+  border-radius: 125px;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.icono i{
+  text-align: center;
+  color: #fff;
+  font-size: 450%;
+  padding: 20%;
+}
+
+/*INFORMACION - MF*/
+/* .info-mf{
+  border-top:  1px solid #594845;
+  width: 100%;
+  margin:auto;
+  padding:10px;
+  text-align:justify;
+} */
+
+
+/* CONTACTOS =======================*/
+.contact{
+  float:right;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  padding: 1%;
+}
+
+
+
+.contact img{
+  width: 65%;
+}
+
+.contact-redes{
+  float:right;
+  margin-top: 0;
+  width: 90%;
+  padding: 0% 4% 2% 0;
+}
+
+.contact-social{
+  text-align: center;
+}
+
+.contact-social li{
+  display: inline;
+}
+
+.contact-social i{
+  font-size: 400%;
+  margin: 3%;
+  padding: 2%;
+  color: #594845;
+  width: 80px;
+  height: 80px;
+  background-color: #A5B083;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 0 0 10px #A5B083,
+              0 15px 50px;
+}
+
+
+/*==================================*/
+/*SERVICIOS*/
+.col-izq{
+  float:right;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  padding: 1%;
+}
+
+.sidebar{
+  float:left;
+  margin:0 auto;
+  width:30%;
+  height: auto;
+  padding: 1%;
+}
+
+.info-servicios{
+  width: 29%;
+  float: left;
+  margin: 2% 2%;
+}
+
+.info-servicios h3{
+  font-weight: bold;
+}
+
+
+.clearfix-padding{
+  clear:both;
+  padding: 2%;
+}
+
+footer{
+  background: #594845;
+  width: 100%;
+  overflow: auto;
+}
+
+.icono-texto{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icono-texto-icono{
+  float:left;
+  width: 20%;
+  padding: 4%;
+}
+
+.icono-texto-texto{
+  float:left;
+  width: 60%;
+  padding: 4% 4% 2% 0;
+}
+
+.footer-nav{
+  text-align: right;
+}
+
+.footer-nav a{
+  font-size: 160%;
+  color:#A5B083;
+  font-weight: 300;
+}
+
+.footer-nav a:hover{
+  font-size: 160%;
+  color:#E6CBA4;
+  font-weight: 300;
+}
+
+.redes{
+  text-align: center;
+
+}
+
+.redes li{
+  display: inline;
+}
+
+.redes i{
+  font-size: 450%;
+  margin: 1%;
+  padding: 5%;
+  color: #A5B083;
+}
+
+.segundo-pie{
+  border-top:  1px solid #A5B083;
+  text-align: center;
+  margin: 0;
+}
+
+.segundo-pie p, .segundo-pie a{
+  text-align: center;
+  color:#A5B083;
+  font-size: 160%;
+  line-height: 155%;
+}
+
+
+/* ===================Formulario================== */
+
+.contacto{
+  float:left;
+  margin:20px auto;
+  width:35%;
+  height: auto;
+  padding: 1%;
+}
+
+form{
+  width: 450px;
+  margin: auto;
+  background: rgba(89,72,69,0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.contacto h2{
+  color:#594845;
+  text-align: center;
+  margin: 0;
+  font-family: fantasy;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.contacto ul{
+  list-style: none;
+  margin:0px;
+  padding: 0px;
+}
+
+.contacto li{
+  position: relative;
+}
+
+input, textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+.contacto textarea{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.contacto button{
+  font-family: fantasy;
+  font-weight: bold;
+  background: #E6CBA4;
+  color:#594845;
+  padding: 20px;
+}
+
+button:hover{
+  cursor:pointer;
+  opacity: .55;
+  color: #fff;
+}
+
+@media (max-width:480px){
+  form{
+    width: 100%;
+  }
+}
+
+label{
+  color:#594845;
+  display:inline-block;
+  font-family: fantasy;
+  font-weight: bold;
+  padding: 3px;
+  margin-top: 3px;
+}
+
+/*Visuales */
+.contacto input, .contacto textarea{
+  border: 1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius: 2px;
+  color: #888;
+  font-size: 12px;
+  padding-right: 30px;
+  -moz-transition: padding .25s;
+  -o-transition: padding .25s;
+  transition: padding .25s;
+}
+
+.contacto input:focus, .contacto textarea:focus{
+  background: #fff;
+  border:  1px solid #555;
+  box-shadow:  0 0 3px #aaa;
+  padding-right: 80px;
+}
+
+.contacto input:required:valid, .contacto textarea:required:valid{
+  box-shadow: 0 0 5px #5CD053;
+  border.color: #2B921F;
+}
+
+.contacto input:focus:invalid, .contacto textarea:focus:invalid{
+  box-shadow: 0 0 5px #D45252;
+  border-color: #B03535;
+}
+/* ====================================================== */
+
+/* ======================== GALERIA ========================== */
+.galeria{
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+
+.galeria h2{
+  color:#594845;
+  border-top: 1px solid #594845;
+  clear:both;
+  font-weight: 400;
+  margin-top:20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*Estilos Base*/
+.contenedor-img {
+	margin-top:20px;
+width: 750px;
+height: 498px;
+float: left;
+overflow: hidden;
+position: relative;
+text-align: center;
+cursor: default;
+background: #fff;
+}
+.contenedor-img .mascara,.contenedor-img .contenido{
+width: 750px;
+height: 498px;
+position: absolute;
+overflow: hidden;
+top: 0;
+left: 0
+}
+.contenedor-img img {
+display: block;
+position: relative;
+
+}
+.contenedor-img h2 {
+text-transform: uppercase;
+color: #fff;
+text-align: center;
+position: relative;
+font-size: 80px;
+padding: 15px;
+background: rgba(0, 0, 0, 0.9);
+margin: 20px 0 0 0
+}
+.contenedor-img p {
+font-size: 25px;
+position: relative;
+color: #fff;
+padding: 10px 20px 10px;
+text-align: center
+}
+.contenedor-img a.link {
+display: inline-block;
+text-decoration: none;
+padding: 21px 42px;
+background: #edd7b6;
+color: #594845;
+text-transform: uppercase;
+box-shadow: 0 0 1px #000
+}
+.contenedor-img a.link:hover {
+box-shadow: 0 0 5px #000
+}
+
+/* ============= EJEMPLO ================*/
+.ejemplo-2 img {
+transition: all 0.2s ease-in;
+}
+.ejemplo-2 .mascara {
+background-color: rgba(159, 165, 136, 0.8);
+width: 750px;
+padding: 250px;
+height: 498px;
+opacity: 1;
+transform: translate(750px, 498px) rotate(45deg); /*Rotamos para dar efecto de diagonal y lo movemos por donde queremos que entre.*/
+transition: all 0.5s ease-in-out;
+}
+.ejemplo-2 h2 {
+border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+background: transparent;
+margin: 20px 40px 0px 40px;
+transform: translate(320px, -320px);/*Desplazamos el título arriba a la derecha*/
+transition: all 0.3s ease-in-out;
+}
+.ejemplo-2 p {
+transform: translate(-320px, 320px);/*Desplazamos la descripción abajo a la izquierda*/
+transition: all 0.4s ease-in-out;
+}
+.ejemplo-2 a.link {
+transform: translate(0px, 320px);/*Desplazamos el link para abajo*/
+transition: all 0.3s 0.1s ease-in-out;
+}
+
+.ejemplo-2:hover .mascara {
+opacity:1;
+transform: translate(-130px, -200px) rotate(45deg);
+}
+.ejemplo-2:hover h2 {
+transform: translate(0px,0px);
+transition-delay: 0.3s;
+}
+.ejemplo-2:hover p {
+transform: translate(0px,0px);
+transition-delay: 0.4s;
+}
+.ejemplo-2:hover a.link {
+transform: translate(0px,0px);
+transition-delay: 0.5s;
+}
+/* ===================================== */
+
+/* =================== IMG2 ======================*/
+
+.contenedor-img2 {
+	margin-top:20px;
+  width: 300px;
+  height: 500px;
+  float: right;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: rgba(89, 72, 69, 0.6);
+}
+.contenedor-img2 .mascara,.contenedor-img2 .contenido{
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+.contenedor-img2 img {
+  display: block;
+  position: relative;
+
+}
+.contenedor-img2 h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 35px;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.9);
+  margin: 20px 0 0 0
+}
+.contenedor-img2 p {
+  font-size: 20px;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px 10px;
+  text-align: center
+}
+.contenedor-img2 a.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 21px 42px;
+  background: #edd7b6;
+  color: #594845;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000
+}
+.contenedor-img2 a.link:hover {
+  box-shadow: 0 0 5px #000
+}
+/*=====================================================*/
+
+/*=================== EJEMPLO 2 =======================*/
+.ejemplo-3 img {
+transition: all 0.2s ease-in;
+}
+.ejemplo-3 .mascara {
+background-color: rgba(159, 165, 136, 0.8);
+width: 300px;
+padding: 135px;
+height: 500px;
+opacity: 1;
+transform: translate(300px, 300px) rotate(45deg); /*Rotamos para dar efecto de diagonal y lo movemos por donde queremos que entre.*/
+transition: all 0.5s ease-in-out;
+}
+.ejemplo-3 h2 {
+border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+background: transparent;
+margin: 20px 40px 0px 40px;
+transform: translate(320px, -320px);/*Desplazamos el título arriba a la derecha*/
+transition: all 0.3s ease-in-out;
+}
+.ejemplo-3 p {
+transform: translate(-320px, 320px);/*Desplazamos la descripción abajo a la izquierda*/
+transition: all 0.4s ease-in-out;
+}
+.ejemplo-3 a.link {
+transform: translate(0px, 320px);/*Desplazamos el link para abajo*/
+transition: all 0.3s 0.1s ease-in-out;
+}
+
+.ejemplo-3:hover .mascara {
+opacity:1;
+transform: translate(-175px, -95px) rotate(45deg);
+}
+.ejemplo-3:hover h2 {
+transform: translate(0px,0px);
+transition-delay: 0.3s;
+}
+.ejemplo-3:hover p {
+transform: translate(0px,0px);
+transition-delay: 0.4s;
+}
+.ejemplo-3:hover a.link {
+transform: translate(0px,0px);
+transition-delay: 0.5s;
+}
+
+/* =========================================================== */
+
+/* =======================PRODUCTOS=============================*/
+
+.wrap{
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+
+.wrap h2{
+  color:#594845;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+
+.wrap h2:before{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #594845;
+  margin: 20px 0;
+  margin-top: 0;
+}
+
+.store-wrapper{
+  display: flex;
+}
+
+.category-list{
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+}
+
+.category-list .category-item{
+  display: block;
+  width: 90%;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background: #A5B083;
+  text-align: center;
+  text-decoration: none;
+  color: #594845;
+}
+/* Para botones activos */
+
+.category-list .ct-item-active{
+  background: #594845;
+  color: #edd7b6;
+}
+
+/* PRODUCTOS */
+
+.products-list{
+  width: 82%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products-list .product-item{
+  width: 22%;
+  margin-left: 3%;
+  margin-bottom: 25px;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  /* Efectos */
+  transition: all .4s;
+}
+
+.products-list .product-item img{
+  width: 100%;
+}
+
+.products-list .product-item a{
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  background: #594845;
+  color: #edd7b6;
+  text-align: center;
+  text-decoration: none;
+}
+/* ============================================== */
+
+
+
+
+/*PARA MOVILES*/
+
+@media screen and(max-width:768px) {
+  p{
+    font-size: 130%;
+  }
+  h3{
+    font-size: 150%;
+  }
+  header{
+    height: 80px;
+    position: relative;
+}
+
+  header #logo{
+    margin: 15px 0 20px -25px;
+  }
+
+  #menu-icono{
+    display: inline-block;
+  }
+
+  nav:hover ul{
+    display: block;
+  }
+
+  nav ul, nav:active ul{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    background: #A5B083;
+    border: 1px solid #A5B083;
+    right: 20px;
+    width: 30%;
+    opacity: .95;
+  }
+
+  nav li{
+    text-align: center;
+    width: 100%;
+  }
+
+  .info{
+    float:left;
+    width: 100%;
+  }
+
+  .icono{
+    height: 80px;
+    width: 80px;
+    margin-top: 3%;
+  }
+
+  .icono i{
+    font-size: 250%;
+    padding-top: 27%;
+  }
+
+.left-col{
+  width: 100%
+  padding:0px;
+}
+
+.sidebar{
+  width: 100%;
+}
+
+.icono-padding{
+  width: 98%;
+  margin: 0;
+  padding: 1%;
+}
+
+icono-texto-icono{
+  width: 100%;
+  padding:0 0 2% 0;
+}
+
+.icono-texto-texto{
+  width: 100%;
+  padding: 2% 0 0 0;
+  font-size: 80%;
+}

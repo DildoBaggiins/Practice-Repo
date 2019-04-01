@@ -1,0 +1,449 @@
+*{
+  margin: 0;
+  padding:0;
+  border:0;
+}
+body{
+  background: #edd7b6;
+}
+
+p{
+  color:#524c56;
+  font-size:160%;
+  line-height: 155%;
+  padding: 3%;
+  text-indent:5%;
+  text-align:justify;
+}
+
+h3{
+  font-size:175%;
+  line-height: 155%;
+  font-weight: 500;
+  color: #524c56;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a{
+  color:#524c56;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover{
+  color:#A5B083;
+}
+
+img{
+  display: block;
+  margin:0 auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+/*================FUENTE================*/
+/*@fontface{
+  font-family: "NombreFont";
+  src: url("../Fuente/SF%20Hollywood%20Hills.ttf") format("true type");
+}*/
+
+
+/*=====================================*/
+
+/*CONTENEDOR*/
+
+#contenedor{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#banner{
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 0 0 3% 0;
+}
+
+header{
+  width: 100%;
+  height:100px;
+  top:0;
+  left: 0;
+}
+
+header #logo img{
+  margin:20px;
+  float:left;
+}
+
+header #logo h1{
+  margin:30px;
+  /*font-family: "NombreFont";*/
+  font-family: Fantasy;
+  font-size: 325%;
+  float:left;
+  color:#594845;
+}
+
+/*NAVEGADOR*/
+
+nav{
+  float:right;
+  padding: 25px 20px 0 0;
+}
+
+#menu-icono{
+  display: none;
+  font-size:50px;
+}
+
+ul{
+  list-style: none;
+}
+
+nav ul li{
+  font-size:120%;
+  display: inline-block;
+  float:left;
+  padding:15px;
+}
+
+nav ul li a{
+  color: #594845;
+  font-family: Fantasy;
+}
+
+.current{
+  color:#3f5767;
+}
+
+.info{
+  width: 31.5%;
+  float:left;
+  padding:10px;
+  text-align: center;
+}
+
+.icono{
+  margin:0 auto;
+  width:120px;
+  height: 120px;
+  background-color: #A5B083;
+  border-radius: 125px;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.icono i{
+  text-align: center;
+  color: #fff;
+  font-size: 450%;
+  padding: 20%;
+}
+
+/*INFORMACION - MF*/
+.info-mf{
+  border-top:  1px solid #594845;
+  width: 70%;
+  margin:auto;
+  padding:10px;
+  text-align:justify;
+}
+
+/*SERVICIOS*/
+.col-izq{
+  float:right;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  padding: 1%;
+}
+
+.sidebar{
+  float:left;
+  margin:0 auto;
+  width:30%;
+  height: auto;
+  padding: 1%;
+}
+
+.info-servicios{
+  width: 29%;
+  float: left;
+  margin: 2% 2%;
+}
+
+.clearfix-padding{
+  clear:both;
+  padding: 2%;
+}
+
+footer{
+  background: #594845;
+  width: 100%;
+  overflow: auto;
+}
+
+.icono-texto{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icono-texto-icono{
+  float:left;
+  width: 20%;
+  padding: 4%;
+}
+
+.icono-texto-texto{
+  float:left;
+  width: 60%;
+  padding: 4% 4% 2% 0;
+}
+
+.footer-nav{
+  text-align: right;
+}
+
+.footer-nav a{
+  font-size: 160%;
+  color:#A5B083;
+  font-weight: 300;
+}
+
+.footer-nav a:hover{
+  font-size: 160%;
+  color:#E6CBA4;
+  font-weight: 300;
+}
+
+.redes{
+  text-align: center;
+
+}
+
+.redes li{
+  display: inline;
+}
+
+.redes i{
+  font-size: 450%;
+  margin: 1%;
+  padding: 5%;
+  color: #A5B083;
+}
+
+.segundo-pie{
+  border-top:  1px solid #A5B083;
+  text-align: center;
+  margin: 0;
+}
+
+.segundo-pie p, .segundo-pie a{
+  text-align: center;
+  color:#A5B083;
+  font-size: 160%;
+  line-height: 155%;
+}
+
+
+/* Formulario */
+
+.contacto{
+  float:left;
+  margin:20px auto;
+  width:35%;
+  height: auto;
+  padding: 1%;
+}
+
+form{
+  width: 450px;
+  margin: auto;
+  background: rgba(89,72,69,0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.contacto h2{
+  color:#594845;
+  text-align: center;
+  margin: 0;
+  font-family: fantasy;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.contacto ul{
+  list-style: none;
+  margin:0px;
+  padding: 0px;
+}
+
+.contacto li{
+  position: relative;
+}
+
+input, textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+.contacto textarea{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.contacto button{
+  font-family: fantasy;
+  font-weight: bold;
+  background: #E6CBA4;
+  color:#594845;
+  padding: 20px;
+}
+
+button:hover{
+  cursor:pointer;
+  opacity: .55;
+  color: #fff;
+}
+
+@media (max-width:480px){
+  form{
+    width: 100%;
+  }
+}
+
+label{
+  color:#594845;
+  display:inline-block;
+  font-family: fantasy;
+  font-weight: bold;
+  padding: 3px;
+  margin-top: 3px;
+}
+
+/*Visuales */
+.contacto input, .contacto textarea{
+  border: 1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius: 2px;
+  color: #888;
+  font-size: 12px;
+  padding-right: 30px;
+  -moz-transition: padding .25s;
+  -o-transition: padding .25s;
+  transition: padding .25s;
+}
+
+.contacto input:focus, .contacto textarea:focus{
+  background: #fff;
+  border:  1px solid #555;
+  box-shadow:  0 0 3px #aaa;
+  padding-right: 80px;
+}
+
+.contacto input:required:valid, .contacto textarea:required:valid{
+  box-shadow: 0 0 5px #5CD053;
+  border.color: #2B921F;
+}
+
+.contacto input:focus:invalid, .contacto textarea:focus:invalid{
+  box-shadow: 0 0 5px #D45252;
+  border-color: #B03535;
+}
+/* ====================================================== */
+
+
+
+/*PARA MOVILES*/
+
+@media screen and(max-width:768px) {
+  p{
+    font-size: 130%;
+  }
+  h3{
+    font-size: 150%;
+  }
+  header{
+    height: 80px;
+    position: relative;
+}
+
+  header #logo{
+    margin: 15px 0 20px -25px;
+  }
+
+  #menu-icono{
+    display: inline-block;
+  }
+
+  nav:hover ul{
+    display: block;
+  }
+
+  nav ul, nav:active ul{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    background: #A5B083;
+    border: 1px solid #A5B083;
+    right: 20px;
+    width: 30%;
+    opacity: .95;
+  }
+
+  nav li{
+    text-align: center;
+    width: 100%;
+  }
+
+  .info{
+    float:left;
+    width: 100%;
+  }
+
+  .icono{
+    height: 80px;
+    width: 80px;
+    margin-top: 3%;
+  }
+
+  .icono i{
+    font-size: 250%;
+    padding-top: 27%;
+  }
+
+.left-col{
+  width: 100%
+  padding:0px;
+}
+
+.sidebar{
+  width: 100%;
+}
+
+.icono-padding{
+  width: 98%;
+  margin: 0;
+  padding: 1%;
+}
+
+icono-texto-icono{
+  width: 100%;
+  padding:0 0 2% 0;
+}
+
+.icono-texto-texto{
+  width: 100%;
+  padding: 2% 0 0 0;
+  font-size: 80%;
+}
